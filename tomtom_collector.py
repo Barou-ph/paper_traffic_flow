@@ -16,6 +16,7 @@ import time
 import argparse
 import os
 from datetime import datetime
+from itertools import permutations
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -86,24 +87,11 @@ NODES = {
     },
 }
 
-# Danh sách cặp nút liền kề (edge trong đồ thị)
-EDGES = [
-    ("v01", "v03"),
-    ("v03", "v10"),
-    ("v10", "v02"),
-    ("v02", "v04"),
-    ("v04", "v05"),
-    ("v09", "v03"),
-    ("v09", "v10"),
-    ("v07", "v08"),
-    ("v08", "v01"),
-    ("v06", "v07"),
-    ("v01", "v07"),
-    ("v03", "v09"),
-    ("v05", "v02"),
-    ("v10", "v01"),
-    ("v07", "v01"),
-]
+# All-pairs (i→j và j→i): 10 nút × 9 = 90 cặp/snapshot
+EDGES = list(permutations(NODES.keys(), 2))
+
+# All-pairs được tính động sau khi NODES định nghĩa xong
+from itertools import permutations
 
 
 # ─────────────────────────────────────────────
