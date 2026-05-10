@@ -1,0 +1,361 @@
+timestamp,time_label,src_node,dst_node,src_name,dst_name,src_poi,dst_poi,travel_time_s,free_flow_time_s,traffic_delay_s,length_m,congestion_ratio
+2026-05-09 22:34:53,normal,v01,v02,Bến Thành,Điện Biên Phủ - Hai BT,commercial,arterial,499,499,0,2676,1.0
+2026-05-09 22:34:53,normal,v01,v03,Bến Thành,Vòng xoay Dân Chủ,commercial,roundabout,249,249,0,1506,1.0
+2026-05-09 22:34:53,normal,v01,v04,Bến Thành,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,455,455,0,2334,1.0
+2026-05-09 22:34:53,normal,v01,v05,Bến Thành,CMT8 - Điện Biên Phủ,commercial,arterial,453,453,0,2512,1.0
+2026-05-09 22:34:53,normal,v01,v06,Bến Thành,Cầu Sài Gòn,commercial,bridge,894,894,0,6310,1.0
+2026-05-09 22:34:53,normal,v01,v07,Bến Thành,Nguyễn Huệ - Lê Lợi,commercial,commercial,339,339,0,1547,1.0
+2026-05-09 22:34:53,normal,v01,v08,Bến Thành,Hàm Nghi - Tôn Đức Thắng,commercial,commercial,322,322,0,1453,1.0
+2026-05-09 22:34:53,normal,v01,v09,Bến Thành,Võ Văn Tần - Nam Kỳ KN,commercial,residential,300,300,0,1658,1.0
+2026-05-09 22:34:53,normal,v01,v10,Bến Thành,Pasteur - Lê Duẩn,commercial,mixed,312,312,0,1816,1.0
+2026-05-09 22:34:53,normal,v02,v01,Điện Biên Phủ - Hai BT,Bến Thành,arterial,commercial,433,433,0,2305,1.0
+2026-05-09 22:34:53,normal,v02,v03,Điện Biên Phủ - Hai BT,Vòng xoay Dân Chủ,arterial,roundabout,291,291,0,1414,1.0
+2026-05-09 22:34:53,normal,v02,v04,Điện Biên Phủ - Hai BT,Lê Văn Sỹ - N.Đ.Chiểu,arterial,residential,114,114,0,531,1.0
+2026-05-09 22:34:53,normal,v02,v05,Điện Biên Phủ - Hai BT,CMT8 - Điện Biên Phủ,arterial,arterial,255,255,0,1448,1.0
+2026-05-09 22:34:53,normal,v02,v06,Điện Biên Phủ - Hai BT,Cầu Sài Gòn,arterial,bridge,525,525,0,4405,1.0
+2026-05-09 22:34:53,normal,v02,v07,Điện Biên Phủ - Hai BT,Nguyễn Huệ - Lê Lợi,arterial,commercial,472,472,0,2276,1.0
+2026-05-09 22:34:53,normal,v02,v08,Điện Biên Phủ - Hai BT,Hàm Nghi - Tôn Đức Thắng,arterial,commercial,544,544,0,2507,1.0
+2026-05-09 22:34:53,normal,v02,v09,Điện Biên Phủ - Hai BT,Võ Văn Tần - Nam Kỳ KN,arterial,residential,232,232,0,1274,1.0
+2026-05-09 22:34:53,normal,v02,v10,Điện Biên Phủ - Hai BT,Pasteur - Lê Duẩn,arterial,mixed,247,247,0,1217,1.0
+2026-05-09 22:34:53,normal,v03,v01,Vòng xoay Dân Chủ,Bến Thành,roundabout,commercial,297,297,0,1528,1.0
+2026-05-09 22:34:53,normal,v03,v02,Vòng xoay Dân Chủ,Điện Biên Phủ - Hai BT,roundabout,arterial,251,251,0,1170,1.0
+2026-05-09 22:34:53,normal,v03,v04,Vòng xoay Dân Chủ,Lê Văn Sỹ - N.Đ.Chiểu,roundabout,residential,216,216,0,1074,1.0
+2026-05-09 22:34:53,normal,v03,v05,Vòng xoay Dân Chủ,CMT8 - Điện Biên Phủ,roundabout,arterial,358,358,0,1991,1.0
+2026-05-09 22:34:53,normal,v03,v06,Vòng xoay Dân Chủ,Cầu Sài Gòn,roundabout,bridge,653,653,0,4543,1.0
+2026-05-09 22:34:53,normal,v03,v07,Vòng xoay Dân Chủ,Nguyễn Huệ - Lê Lợi,roundabout,commercial,330,330,0,1487,1.0
+2026-05-09 22:34:53,normal,v03,v08,Vòng xoay Dân Chủ,Hàm Nghi - Tôn Đức Thắng,roundabout,commercial,402,402,0,1718,1.0
+2026-05-09 22:34:53,normal,v03,v09,Vòng xoay Dân Chủ,Võ Văn Tần - Nam Kỳ KN,roundabout,residential,158,158,0,756,1.0
+2026-05-09 22:34:53,normal,v03,v10,Vòng xoay Dân Chủ,Pasteur - Lê Duẩn,roundabout,mixed,63,63,0,311,1.0
+2026-05-09 22:34:53,normal,v04,v01,Lê Văn Sỹ - N.Đ.Chiểu,Bến Thành,residential,commercial,414,414,0,2187,1.0
+2026-05-09 22:34:53,normal,v04,v02,Lê Văn Sỹ - N.Đ.Chiểu,Điện Biên Phủ - Hai BT,residential,arterial,263,263,0,1215,1.0
+2026-05-09 22:34:53,normal,v04,v03,Lê Văn Sỹ - N.Đ.Chiểu,Vòng xoay Dân Chủ,residential,roundabout,262,262,0,1294,1.0
+2026-05-09 22:34:53,normal,v04,v05,Lê Văn Sỹ - N.Đ.Chiểu,CMT8 - Điện Biên Phủ,residential,arterial,142,142,0,917,1.0
+2026-05-09 22:34:53,normal,v04,v06,Lê Văn Sỹ - N.Đ.Chiểu,Cầu Sài Gòn,residential,bridge,685,685,0,5233,1.0
+2026-05-09 22:34:53,normal,v04,v07,Lê Văn Sỹ - N.Đ.Chiểu,Nguyễn Huệ - Lê Lợi,residential,commercial,535,535,0,2636,1.0
+2026-05-09 22:34:53,normal,v04,v08,Lê Văn Sỹ - N.Đ.Chiểu,Hàm Nghi - Tôn Đức Thắng,residential,commercial,544,544,0,2724,1.0
+2026-05-09 22:34:53,normal,v04,v09,Lê Văn Sỹ - N.Đ.Chiểu,Võ Văn Tần - Nam Kỳ KN,residential,residential,169,169,0,823,1.0
+2026-05-09 22:34:53,normal,v04,v10,Lê Văn Sỹ - N.Đ.Chiểu,Pasteur - Lê Duẩn,residential,mixed,326,326,0,1604,1.0
+2026-05-09 22:34:53,normal,v05,v01,CMT8 - Điện Biên Phủ,Bến Thành,arterial,commercial,471,471,0,2662,1.0
+2026-05-09 22:34:53,normal,v05,v02,CMT8 - Điện Biên Phủ,Điện Biên Phủ - Hai BT,arterial,arterial,225,225,0,1294,1.0
+2026-05-09 22:34:53,normal,v05,v03,CMT8 - Điện Biên Phủ,Vòng xoay Dân Chủ,arterial,roundabout,329,329,0,1772,1.0
+2026-05-09 22:34:53,normal,v05,v04,CMT8 - Điện Biên Phủ,Lê Văn Sỹ - N.Đ.Chiểu,arterial,residential,269,269,0,1305,1.0
+2026-05-09 22:34:53,normal,v05,v06,CMT8 - Điện Biên Phủ,Cầu Sài Gòn,arterial,bridge,750,750,0,5699,1.0
+2026-05-09 22:34:53,normal,v05,v07,CMT8 - Điện Biên Phủ,Nguyễn Huệ - Lê Lợi,arterial,commercial,592,592,0,3111,1.0
+2026-05-09 22:34:53,normal,v05,v08,CMT8 - Điện Biên Phủ,Hàm Nghi - Tôn Đức Thắng,arterial,commercial,601,601,0,3199,1.0
+2026-05-09 22:34:53,normal,v05,v09,CMT8 - Điện Biên Phủ,Võ Văn Tần - Nam Kỳ KN,arterial,residential,288,288,0,1631,1.0
+2026-05-09 22:34:53,normal,v05,v10,CMT8 - Điện Biên Phủ,Pasteur - Lê Duẩn,arterial,mixed,392,392,0,2082,1.0
+2026-05-09 22:34:53,normal,v06,v01,Cầu Sài Gòn,Bến Thành,bridge,commercial,869,869,0,5519,1.0
+2026-05-09 22:34:53,normal,v06,v02,Cầu Sài Gòn,Điện Biên Phủ - Hai BT,bridge,arterial,589,589,0,4972,1.0
+2026-05-09 22:34:53,normal,v06,v03,Cầu Sài Gòn,Vòng xoay Dân Chủ,bridge,roundabout,834,834,0,5916,1.0
+2026-05-09 22:34:53,normal,v06,v04,Cầu Sài Gòn,Lê Văn Sỹ - N.Đ.Chiểu,bridge,residential,653,653,0,5393,1.0
+2026-05-09 22:34:53,normal,v06,v05,Cầu Sài Gòn,CMT8 - Điện Biên Phủ,bridge,arterial,795,795,0,6311,1.0
+2026-05-09 22:34:53,normal,v06,v07,Cầu Sài Gòn,Nguyễn Huệ - Lê Lợi,bridge,commercial,890,890,0,5580,1.0
+2026-05-09 22:34:53,normal,v06,v08,Cầu Sài Gòn,Hàm Nghi - Tôn Đức Thắng,bridge,commercial,743,743,0,5142,1.0
+2026-05-09 22:34:53,normal,v06,v09,Cầu Sài Gòn,Võ Văn Tần - Nam Kỳ KN,bridge,residential,775,775,0,5775,1.0
+2026-05-09 22:34:53,normal,v06,v10,Cầu Sài Gòn,Pasteur - Lê Duẩn,bridge,mixed,731,731,0,4846,1.0
+2026-05-09 22:34:53,normal,v07,v01,Nguyễn Huệ - Lê Lợi,Bến Thành,commercial,commercial,217,217,0,800,1.0
+2026-05-09 22:34:53,normal,v07,v02,Nguyễn Huệ - Lê Lợi,Điện Biên Phủ - Hai BT,commercial,arterial,652,516,136,2371,1.264
+2026-05-09 22:34:53,normal,v07,v03,Nguyễn Huệ - Lê Lợi,Vòng xoay Dân Chủ,commercial,roundabout,472,472,0,2365,1.0
+2026-05-09 22:34:53,normal,v07,v04,Nguyễn Huệ - Lê Lợi,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,617,481,136,2275,1.283
+2026-05-09 22:34:53,normal,v07,v05,Nguyễn Huệ - Lê Lợi,CMT8 - Điện Biên Phủ,commercial,arterial,676,676,0,3372,1.0
+2026-05-09 22:34:53,normal,v07,v06,Nguyễn Huệ - Lê Lợi,Cầu Sài Gòn,commercial,bridge,730,730,0,5053,1.0
+2026-05-09 22:34:53,normal,v07,v08,Nguyễn Huệ - Lê Lợi,Hàm Nghi - Tôn Đức Thắng,commercial,commercial,72,72,0,231,1.0
+2026-05-09 22:34:53,normal,v07,v09,Nguyễn Huệ - Lê Lợi,Võ Văn Tần - Nam Kỳ KN,commercial,residential,523,523,0,2517,1.0
+2026-05-09 22:34:53,normal,v07,v10,Nguyễn Huệ - Lê Lợi,Pasteur - Lê Duẩn,commercial,mixed,482,346,136,1512,1.393
+2026-05-09 22:34:53,normal,v08,v01,Hàm Nghi - Tôn Đức Thắng,Bến Thành,commercial,commercial,260,260,0,943,1.0
+2026-05-09 22:34:53,normal,v08,v02,Hàm Nghi - Tôn Đức Thắng,Điện Biên Phủ - Hai BT,commercial,arterial,681,681,0,3971,1.0
+2026-05-09 22:34:53,normal,v08,v03,Hàm Nghi - Tôn Đức Thắng,Vòng xoay Dân Chủ,commercial,roundabout,515,515,0,2508,1.0
+2026-05-09 22:34:53,normal,v08,v04,Hàm Nghi - Tôn Đức Thắng,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,660,524,136,2419,1.26
+2026-05-09 22:34:53,normal,v08,v05,Hàm Nghi - Tôn Đức Thắng,CMT8 - Điện Biên Phủ,commercial,arterial,719,719,0,3515,1.0
+2026-05-09 22:34:53,normal,v08,v06,Hàm Nghi - Tôn Đức Thắng,Cầu Sài Gòn,commercial,bridge,707,707,0,4887,1.0
+2026-05-09 22:34:53,normal,v08,v07,Hàm Nghi - Tôn Đức Thắng,Nguyễn Huệ - Lê Lợi,commercial,commercial,236,236,0,863,1.0
+2026-05-09 22:34:53,normal,v08,v09,Hàm Nghi - Tôn Đức Thắng,Võ Văn Tần - Nam Kỳ KN,commercial,residential,566,566,0,2660,1.0
+2026-05-09 22:34:53,normal,v08,v10,Hàm Nghi - Tôn Đức Thắng,Pasteur - Lê Duẩn,commercial,mixed,526,390,136,1655,1.349
+2026-05-09 22:34:53,normal,v09,v01,Võ Văn Tần - Nam Kỳ KN,Bến Thành,residential,commercial,416,416,0,2073,1.0
+2026-05-09 22:34:53,normal,v09,v02,Võ Văn Tần - Nam Kỳ KN,Điện Biên Phủ - Hai BT,residential,arterial,287,287,0,1424,1.0
+2026-05-09 22:34:53,normal,v09,v03,Võ Văn Tần - Nam Kỳ KN,Vòng xoay Dân Chủ,residential,roundabout,266,266,0,1178,1.0
+2026-05-09 22:34:53,normal,v09,v04,Võ Văn Tần - Nam Kỳ KN,Lê Văn Sỹ - N.Đ.Chiểu,residential,residential,223,223,0,1055,1.0
+2026-05-09 22:34:53,normal,v09,v05,Võ Văn Tần - Nam Kỳ KN,CMT8 - Điện Biên Phủ,residential,arterial,213,213,0,1247,1.0
+2026-05-09 22:34:53,normal,v09,v06,Võ Văn Tần - Nam Kỳ KN,Cầu Sài Gòn,residential,bridge,709,709,0,5442,1.0
+2026-05-09 22:34:53,normal,v09,v07,Võ Văn Tần - Nam Kỳ KN,Nguyễn Huệ - Lê Lợi,residential,commercial,537,537,0,2522,1.0
+2026-05-09 22:34:53,normal,v09,v08,Võ Văn Tần - Nam Kỳ KN,Hàm Nghi - Tôn Đức Thắng,residential,commercial,546,546,0,2610,1.0
+2026-05-09 22:34:53,normal,v09,v10,Võ Văn Tần - Nam Kỳ KN,Pasteur - Lê Duẩn,residential,mixed,329,329,0,1488,1.0
+2026-05-09 22:34:53,normal,v10,v01,Pasteur - Lê Duẩn,Bến Thành,mixed,commercial,324,324,0,1577,1.0
+2026-05-09 22:34:53,normal,v10,v02,Pasteur - Lê Duẩn,Điện Biên Phủ - Hai BT,mixed,arterial,188,188,0,890,1.0
+2026-05-09 22:34:53,normal,v10,v03,Pasteur - Lê Duẩn,Vòng xoay Dân Chủ,mixed,roundabout,254,254,0,1038,1.0
+2026-05-09 22:34:53,normal,v10,v04,Pasteur - Lê Duẩn,Lê Văn Sỹ - N.Đ.Chiểu,mixed,residential,302,302,0,1422,1.0
+2026-05-09 22:34:53,normal,v10,v05,Pasteur - Lê Duẩn,CMT8 - Điện Biên Phủ,mixed,arterial,444,444,0,2339,1.0
+2026-05-09 22:34:53,normal,v10,v06,Pasteur - Lê Duẩn,Cầu Sài Gòn,mixed,bridge,590,590,0,4232,1.0
+2026-05-09 22:34:53,normal,v10,v07,Pasteur - Lê Duẩn,Nguyễn Huệ - Lê Lợi,mixed,commercial,344,344,0,1542,1.0
+2026-05-09 22:34:53,normal,v10,v08,Pasteur - Lê Duẩn,Hàm Nghi - Tôn Đức Thắng,mixed,commercial,416,416,0,1773,1.0
+2026-05-09 22:34:53,normal,v10,v09,Pasteur - Lê Duẩn,Võ Văn Tần - Nam Kỳ KN,mixed,residential,240,240,0,1147,1.0
+2026-05-09 22:40:54,normal,v01,v02,Bến Thành,Điện Biên Phủ - Hai BT,commercial,arterial,499,499,0,2676,1.0
+2026-05-09 22:40:54,normal,v01,v03,Bến Thành,Vòng xoay Dân Chủ,commercial,roundabout,249,249,0,1506,1.0
+2026-05-09 22:40:54,normal,v01,v04,Bến Thành,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,455,455,0,2334,1.0
+2026-05-09 22:40:54,normal,v01,v05,Bến Thành,CMT8 - Điện Biên Phủ,commercial,arterial,453,453,0,2512,1.0
+2026-05-09 22:40:54,normal,v01,v06,Bến Thành,Cầu Sài Gòn,commercial,bridge,879,879,0,5562,1.0
+2026-05-09 22:40:54,normal,v01,v07,Bến Thành,Nguyễn Huệ - Lê Lợi,commercial,commercial,339,339,0,1547,1.0
+2026-05-09 22:40:54,normal,v01,v08,Bến Thành,Hàm Nghi - Tôn Đức Thắng,commercial,commercial,322,322,0,1453,1.0
+2026-05-09 22:40:54,normal,v01,v09,Bến Thành,Võ Văn Tần - Nam Kỳ KN,commercial,residential,300,300,0,1658,1.0
+2026-05-09 22:40:54,normal,v01,v10,Bến Thành,Pasteur - Lê Duẩn,commercial,mixed,312,312,0,1816,1.0
+2026-05-09 22:40:54,normal,v02,v01,Điện Biên Phủ - Hai BT,Bến Thành,arterial,commercial,433,433,0,2305,1.0
+2026-05-09 22:40:54,normal,v02,v03,Điện Biên Phủ - Hai BT,Vòng xoay Dân Chủ,arterial,roundabout,291,291,0,1414,1.0
+2026-05-09 22:40:54,normal,v02,v04,Điện Biên Phủ - Hai BT,Lê Văn Sỹ - N.Đ.Chiểu,arterial,residential,114,114,0,531,1.0
+2026-05-09 22:40:54,normal,v02,v05,Điện Biên Phủ - Hai BT,CMT8 - Điện Biên Phủ,arterial,arterial,255,255,0,1448,1.0
+2026-05-09 22:40:54,normal,v02,v06,Điện Biên Phủ - Hai BT,Cầu Sài Gòn,arterial,bridge,525,525,0,4405,1.0
+2026-05-09 22:40:54,normal,v02,v07,Điện Biên Phủ - Hai BT,Nguyễn Huệ - Lê Lợi,arterial,commercial,472,472,0,2276,1.0
+2026-05-09 22:40:54,normal,v02,v08,Điện Biên Phủ - Hai BT,Hàm Nghi - Tôn Đức Thắng,arterial,commercial,544,544,0,2507,1.0
+2026-05-09 22:40:54,normal,v02,v09,Điện Biên Phủ - Hai BT,Võ Văn Tần - Nam Kỳ KN,arterial,residential,232,232,0,1274,1.0
+2026-05-09 22:40:54,normal,v02,v10,Điện Biên Phủ - Hai BT,Pasteur - Lê Duẩn,arterial,mixed,247,247,0,1217,1.0
+2026-05-09 22:40:54,normal,v03,v01,Vòng xoay Dân Chủ,Bến Thành,roundabout,commercial,297,297,0,1528,1.0
+2026-05-09 22:40:54,normal,v03,v02,Vòng xoay Dân Chủ,Điện Biên Phủ - Hai BT,roundabout,arterial,251,251,0,1170,1.0
+2026-05-09 22:40:54,normal,v03,v04,Vòng xoay Dân Chủ,Lê Văn Sỹ - N.Đ.Chiểu,roundabout,residential,216,216,0,1074,1.0
+2026-05-09 22:40:54,normal,v03,v05,Vòng xoay Dân Chủ,CMT8 - Điện Biên Phủ,roundabout,arterial,358,358,0,1991,1.0
+2026-05-09 22:40:54,normal,v03,v06,Vòng xoay Dân Chủ,Cầu Sài Gòn,roundabout,bridge,653,653,0,4543,1.0
+2026-05-09 22:40:54,normal,v03,v07,Vòng xoay Dân Chủ,Nguyễn Huệ - Lê Lợi,roundabout,commercial,330,330,0,1487,1.0
+2026-05-09 22:40:54,normal,v03,v08,Vòng xoay Dân Chủ,Hàm Nghi - Tôn Đức Thắng,roundabout,commercial,402,402,0,1718,1.0
+2026-05-09 22:40:54,normal,v03,v09,Vòng xoay Dân Chủ,Võ Văn Tần - Nam Kỳ KN,roundabout,residential,158,158,0,756,1.0
+2026-05-09 22:40:54,normal,v03,v10,Vòng xoay Dân Chủ,Pasteur - Lê Duẩn,roundabout,mixed,63,63,0,311,1.0
+2026-05-09 22:40:54,normal,v04,v01,Lê Văn Sỹ - N.Đ.Chiểu,Bến Thành,residential,commercial,414,414,0,2187,1.0
+2026-05-09 22:40:54,normal,v04,v02,Lê Văn Sỹ - N.Đ.Chiểu,Điện Biên Phủ - Hai BT,residential,arterial,263,263,0,1215,1.0
+2026-05-09 22:40:54,normal,v04,v03,Lê Văn Sỹ - N.Đ.Chiểu,Vòng xoay Dân Chủ,residential,roundabout,262,262,0,1294,1.0
+2026-05-09 22:40:54,normal,v04,v05,Lê Văn Sỹ - N.Đ.Chiểu,CMT8 - Điện Biên Phủ,residential,arterial,142,142,0,917,1.0
+2026-05-09 22:40:54,normal,v04,v06,Lê Văn Sỹ - N.Đ.Chiểu,Cầu Sài Gòn,residential,bridge,685,685,0,5233,1.0
+2026-05-09 22:40:54,normal,v04,v07,Lê Văn Sỹ - N.Đ.Chiểu,Nguyễn Huệ - Lê Lợi,residential,commercial,535,535,0,2636,1.0
+2026-05-09 22:40:54,normal,v04,v08,Lê Văn Sỹ - N.Đ.Chiểu,Hàm Nghi - Tôn Đức Thắng,residential,commercial,544,544,0,2724,1.0
+2026-05-09 22:40:54,normal,v04,v09,Lê Văn Sỹ - N.Đ.Chiểu,Võ Văn Tần - Nam Kỳ KN,residential,residential,169,169,0,823,1.0
+2026-05-09 22:40:54,normal,v04,v10,Lê Văn Sỹ - N.Đ.Chiểu,Pasteur - Lê Duẩn,residential,mixed,326,326,0,1604,1.0
+2026-05-09 22:40:54,normal,v05,v01,CMT8 - Điện Biên Phủ,Bến Thành,arterial,commercial,471,471,0,2662,1.0
+2026-05-09 22:40:54,normal,v05,v02,CMT8 - Điện Biên Phủ,Điện Biên Phủ - Hai BT,arterial,arterial,225,225,0,1294,1.0
+2026-05-09 22:40:54,normal,v05,v03,CMT8 - Điện Biên Phủ,Vòng xoay Dân Chủ,arterial,roundabout,329,329,0,1772,1.0
+2026-05-09 22:40:54,normal,v05,v04,CMT8 - Điện Biên Phủ,Lê Văn Sỹ - N.Đ.Chiểu,arterial,residential,269,269,0,1305,1.0
+2026-05-09 22:40:54,normal,v05,v06,CMT8 - Điện Biên Phủ,Cầu Sài Gòn,arterial,bridge,750,750,0,5699,1.0
+2026-05-09 22:40:54,normal,v05,v07,CMT8 - Điện Biên Phủ,Nguyễn Huệ - Lê Lợi,arterial,commercial,592,592,0,3111,1.0
+2026-05-09 22:40:54,normal,v05,v08,CMT8 - Điện Biên Phủ,Hàm Nghi - Tôn Đức Thắng,arterial,commercial,601,601,0,3199,1.0
+2026-05-09 22:40:54,normal,v05,v09,CMT8 - Điện Biên Phủ,Võ Văn Tần - Nam Kỳ KN,arterial,residential,288,288,0,1631,1.0
+2026-05-09 22:40:54,normal,v05,v10,CMT8 - Điện Biên Phủ,Pasteur - Lê Duẩn,arterial,mixed,392,392,0,2082,1.0
+2026-05-09 22:40:54,normal,v06,v01,Cầu Sài Gòn,Bến Thành,bridge,commercial,869,869,0,5519,1.0
+2026-05-09 22:40:54,normal,v06,v02,Cầu Sài Gòn,Điện Biên Phủ - Hai BT,bridge,arterial,589,589,0,4972,1.0
+2026-05-09 22:40:54,normal,v06,v03,Cầu Sài Gòn,Vòng xoay Dân Chủ,bridge,roundabout,834,834,0,5916,1.0
+2026-05-09 22:40:54,normal,v06,v04,Cầu Sài Gòn,Lê Văn Sỹ - N.Đ.Chiểu,bridge,residential,653,653,0,5393,1.0
+2026-05-09 22:40:54,normal,v06,v05,Cầu Sài Gòn,CMT8 - Điện Biên Phủ,bridge,arterial,795,795,0,6311,1.0
+2026-05-09 22:40:54,normal,v06,v07,Cầu Sài Gòn,Nguyễn Huệ - Lê Lợi,bridge,commercial,866,832,34,5140,1.041
+2026-05-09 22:40:54,normal,v06,v08,Cầu Sài Gòn,Hàm Nghi - Tôn Đức Thắng,bridge,commercial,743,743,0,5142,1.0
+2026-05-09 22:40:54,normal,v06,v09,Cầu Sài Gòn,Võ Văn Tần - Nam Kỳ KN,bridge,residential,775,775,0,5775,1.0
+2026-05-09 22:40:54,normal,v06,v10,Cầu Sài Gòn,Pasteur - Lê Duẩn,bridge,mixed,731,731,0,4846,1.0
+2026-05-09 22:40:54,normal,v07,v01,Nguyễn Huệ - Lê Lợi,Bến Thành,commercial,commercial,217,217,0,889,1.0
+2026-05-09 22:40:54,normal,v07,v02,Nguyễn Huệ - Lê Lợi,Điện Biên Phủ - Hai BT,commercial,arterial,516,516,0,2371,1.0
+2026-05-09 22:40:54,normal,v07,v03,Nguyễn Huệ - Lê Lợi,Vòng xoay Dân Chủ,commercial,roundabout,425,425,0,1788,1.0
+2026-05-09 22:40:54,normal,v07,v04,Nguyễn Huệ - Lê Lợi,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,481,481,0,2275,1.0
+2026-05-09 22:40:54,normal,v07,v05,Nguyễn Huệ - Lê Lợi,CMT8 - Điện Biên Phủ,commercial,arterial,623,623,0,3192,1.0
+2026-05-09 22:40:54,normal,v07,v06,Nguyễn Huệ - Lê Lợi,Cầu Sài Gòn,commercial,bridge,730,730,0,5053,1.0
+2026-05-09 22:40:54,normal,v07,v08,Nguyễn Huệ - Lê Lợi,Hàm Nghi - Tôn Đức Thắng,commercial,commercial,72,72,0,231,1.0
+2026-05-09 22:40:54,normal,v07,v09,Nguyễn Huệ - Lê Lợi,Võ Văn Tần - Nam Kỳ KN,commercial,residential,423,423,0,1957,1.0
+2026-05-09 22:40:54,normal,v07,v10,Nguyễn Huệ - Lê Lợi,Pasteur - Lê Duẩn,commercial,mixed,346,346,0,1512,1.0
+2026-05-09 22:40:54,normal,v08,v01,Hàm Nghi - Tôn Đức Thắng,Bến Thành,commercial,commercial,260,260,0,1032,1.0
+2026-05-09 22:40:54,normal,v08,v02,Hàm Nghi - Tôn Đức Thắng,Điện Biên Phủ - Hai BT,commercial,arterial,559,559,0,2515,1.0
+2026-05-09 22:40:54,normal,v08,v03,Hàm Nghi - Tôn Đức Thắng,Vòng xoay Dân Chủ,commercial,roundabout,468,468,0,1932,1.0
+2026-05-09 22:40:54,normal,v08,v04,Hàm Nghi - Tôn Đức Thắng,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,524,524,0,2419,1.0
+2026-05-09 22:40:54,normal,v08,v05,Hàm Nghi - Tôn Đức Thắng,CMT8 - Điện Biên Phủ,commercial,arterial,666,666,0,3336,1.0
+2026-05-09 22:40:54,normal,v08,v06,Hàm Nghi - Tôn Đức Thắng,Cầu Sài Gòn,commercial,bridge,707,707,0,4887,1.0
+2026-05-09 22:40:54,normal,v08,v07,Hàm Nghi - Tôn Đức Thắng,Nguyễn Huệ - Lê Lợi,commercial,commercial,238,236,2,863,1.008
+2026-05-09 22:40:54,normal,v08,v09,Hàm Nghi - Tôn Đức Thắng,Võ Văn Tần - Nam Kỳ KN,commercial,residential,466,466,0,2100,1.0
+2026-05-09 22:40:54,normal,v08,v10,Hàm Nghi - Tôn Đức Thắng,Pasteur - Lê Duẩn,commercial,mixed,390,390,0,1655,1.0
+2026-05-09 22:40:54,normal,v09,v01,Võ Văn Tần - Nam Kỳ KN,Bến Thành,residential,commercial,416,416,0,2073,1.0
+2026-05-09 22:40:54,normal,v09,v02,Võ Văn Tần - Nam Kỳ KN,Điện Biên Phủ - Hai BT,residential,arterial,287,287,0,1424,1.0
+2026-05-09 22:40:54,normal,v09,v03,Võ Văn Tần - Nam Kỳ KN,Vòng xoay Dân Chủ,residential,roundabout,266,266,0,1178,1.0
+2026-05-09 22:40:54,normal,v09,v04,Võ Văn Tần - Nam Kỳ KN,Lê Văn Sỹ - N.Đ.Chiểu,residential,residential,223,223,0,1055,1.0
+2026-05-09 22:40:54,normal,v09,v05,Võ Văn Tần - Nam Kỳ KN,CMT8 - Điện Biên Phủ,residential,arterial,213,213,0,1247,1.0
+2026-05-09 22:40:54,normal,v09,v06,Võ Văn Tần - Nam Kỳ KN,Cầu Sài Gòn,residential,bridge,709,709,0,5442,1.0
+2026-05-09 22:40:54,normal,v09,v07,Võ Văn Tần - Nam Kỳ KN,Nguyễn Huệ - Lê Lợi,residential,commercial,539,537,2,2522,1.004
+2026-05-09 22:40:54,normal,v09,v08,Võ Văn Tần - Nam Kỳ KN,Hàm Nghi - Tôn Đức Thắng,residential,commercial,546,546,0,2610,1.0
+2026-05-09 22:40:54,normal,v09,v10,Võ Văn Tần - Nam Kỳ KN,Pasteur - Lê Duẩn,residential,mixed,329,329,0,1488,1.0
+2026-05-09 22:40:54,normal,v10,v01,Pasteur - Lê Duẩn,Bến Thành,mixed,commercial,324,324,0,1577,1.0
+2026-05-09 22:40:54,normal,v10,v02,Pasteur - Lê Duẩn,Điện Biên Phủ - Hai BT,mixed,arterial,188,188,0,890,1.0
+2026-05-09 22:40:54,normal,v10,v03,Pasteur - Lê Duẩn,Vòng xoay Dân Chủ,mixed,roundabout,254,254,0,1038,1.0
+2026-05-09 22:40:54,normal,v10,v04,Pasteur - Lê Duẩn,Lê Văn Sỹ - N.Đ.Chiểu,mixed,residential,302,302,0,1422,1.0
+2026-05-09 22:40:54,normal,v10,v05,Pasteur - Lê Duẩn,CMT8 - Điện Biên Phủ,mixed,arterial,444,444,0,2339,1.0
+2026-05-09 22:40:54,normal,v10,v06,Pasteur - Lê Duẩn,Cầu Sài Gòn,mixed,bridge,590,590,0,4232,1.0
+2026-05-09 22:40:54,normal,v10,v07,Pasteur - Lê Duẩn,Nguyễn Huệ - Lê Lợi,mixed,commercial,344,344,0,1542,1.0
+2026-05-09 22:40:54,normal,v10,v08,Pasteur - Lê Duẩn,Hàm Nghi - Tôn Đức Thắng,mixed,commercial,418,416,2,1773,1.005
+2026-05-09 22:40:54,normal,v10,v09,Pasteur - Lê Duẩn,Võ Văn Tần - Nam Kỳ KN,mixed,residential,240,240,0,1147,1.0
+2026-05-09 22:46:50,normal,v01,v02,Bến Thành,Điện Biên Phủ - Hai BT,commercial,arterial,499,499,0,2676,1.0
+2026-05-09 22:46:50,normal,v01,v03,Bến Thành,Vòng xoay Dân Chủ,commercial,roundabout,249,249,0,1506,1.0
+2026-05-09 22:46:50,normal,v01,v04,Bến Thành,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,455,455,0,2334,1.0
+2026-05-09 22:46:50,normal,v01,v05,Bến Thành,CMT8 - Điện Biên Phủ,commercial,arterial,453,453,0,2512,1.0
+2026-05-09 22:46:50,normal,v01,v06,Bến Thành,Cầu Sài Gòn,commercial,bridge,879,879,0,5562,1.0
+2026-05-09 22:46:50,normal,v01,v07,Bến Thành,Nguyễn Huệ - Lê Lợi,commercial,commercial,339,339,0,1547,1.0
+2026-05-09 22:46:50,normal,v01,v08,Bến Thành,Hàm Nghi - Tôn Đức Thắng,commercial,commercial,322,322,0,1453,1.0
+2026-05-09 22:46:50,normal,v01,v09,Bến Thành,Võ Văn Tần - Nam Kỳ KN,commercial,residential,300,300,0,1658,1.0
+2026-05-09 22:46:50,normal,v01,v10,Bến Thành,Pasteur - Lê Duẩn,commercial,mixed,312,312,0,1816,1.0
+2026-05-09 22:46:50,normal,v02,v01,Điện Biên Phủ - Hai BT,Bến Thành,arterial,commercial,457,457,0,2358,1.0
+2026-05-09 22:46:50,normal,v02,v03,Điện Biên Phủ - Hai BT,Vòng xoay Dân Chủ,arterial,roundabout,291,291,0,1414,1.0
+2026-05-09 22:46:50,normal,v02,v04,Điện Biên Phủ - Hai BT,Lê Văn Sỹ - N.Đ.Chiểu,arterial,residential,114,114,0,531,1.0
+2026-05-09 22:46:50,normal,v02,v05,Điện Biên Phủ - Hai BT,CMT8 - Điện Biên Phủ,arterial,arterial,255,255,0,1448,1.0
+2026-05-09 22:46:50,normal,v02,v06,Điện Biên Phủ - Hai BT,Cầu Sài Gòn,arterial,bridge,525,525,0,4405,1.0
+2026-05-09 22:46:50,normal,v02,v07,Điện Biên Phủ - Hai BT,Nguyễn Huệ - Lê Lợi,arterial,commercial,472,472,0,2276,1.0
+2026-05-09 22:46:50,normal,v02,v08,Điện Biên Phủ - Hai BT,Hàm Nghi - Tôn Đức Thắng,arterial,commercial,544,544,0,2507,1.0
+2026-05-09 22:46:50,normal,v02,v09,Điện Biên Phủ - Hai BT,Võ Văn Tần - Nam Kỳ KN,arterial,residential,232,232,0,1274,1.0
+2026-05-09 22:46:50,normal,v02,v10,Điện Biên Phủ - Hai BT,Pasteur - Lê Duẩn,arterial,mixed,247,247,0,1217,1.0
+2026-05-09 22:46:50,normal,v03,v01,Vòng xoay Dân Chủ,Bến Thành,roundabout,commercial,321,321,0,1582,1.0
+2026-05-09 22:46:50,normal,v03,v02,Vòng xoay Dân Chủ,Điện Biên Phủ - Hai BT,roundabout,arterial,251,251,0,1170,1.0
+2026-05-09 22:46:50,normal,v03,v04,Vòng xoay Dân Chủ,Lê Văn Sỹ - N.Đ.Chiểu,roundabout,residential,216,216,0,1074,1.0
+2026-05-09 22:46:50,normal,v03,v05,Vòng xoay Dân Chủ,CMT8 - Điện Biên Phủ,roundabout,arterial,358,358,0,1991,1.0
+2026-05-09 22:46:50,normal,v03,v06,Vòng xoay Dân Chủ,Cầu Sài Gòn,roundabout,bridge,653,653,0,4543,1.0
+2026-05-09 22:46:50,normal,v03,v07,Vòng xoay Dân Chủ,Nguyễn Huệ - Lê Lợi,roundabout,commercial,330,330,0,1487,1.0
+2026-05-09 22:46:50,normal,v03,v08,Vòng xoay Dân Chủ,Hàm Nghi - Tôn Đức Thắng,roundabout,commercial,402,402,0,1718,1.0
+2026-05-09 22:46:50,normal,v03,v09,Vòng xoay Dân Chủ,Võ Văn Tần - Nam Kỳ KN,roundabout,residential,158,158,0,756,1.0
+2026-05-09 22:46:50,normal,v03,v10,Vòng xoay Dân Chủ,Pasteur - Lê Duẩn,roundabout,mixed,63,63,0,311,1.0
+2026-05-09 22:46:50,normal,v04,v01,Lê Văn Sỹ - N.Đ.Chiểu,Bến Thành,residential,commercial,438,438,0,2241,1.0
+2026-05-09 22:46:50,normal,v04,v02,Lê Văn Sỹ - N.Đ.Chiểu,Điện Biên Phủ - Hai BT,residential,arterial,263,263,0,1215,1.0
+2026-05-09 22:46:50,normal,v04,v03,Lê Văn Sỹ - N.Đ.Chiểu,Vòng xoay Dân Chủ,residential,roundabout,262,262,0,1294,1.0
+2026-05-09 22:46:50,normal,v04,v05,Lê Văn Sỹ - N.Đ.Chiểu,CMT8 - Điện Biên Phủ,residential,arterial,142,142,0,917,1.0
+2026-05-09 22:46:50,normal,v04,v06,Lê Văn Sỹ - N.Đ.Chiểu,Cầu Sài Gòn,residential,bridge,685,685,0,5233,1.0
+2026-05-09 22:46:50,normal,v04,v07,Lê Văn Sỹ - N.Đ.Chiểu,Nguyễn Huệ - Lê Lợi,residential,commercial,568,568,0,2747,1.0
+2026-05-09 22:46:50,normal,v04,v08,Lê Văn Sỹ - N.Đ.Chiểu,Hàm Nghi - Tôn Đức Thắng,residential,commercial,621,615,6,2890,1.01
+2026-05-09 22:46:50,normal,v04,v09,Lê Văn Sỹ - N.Đ.Chiểu,Võ Văn Tần - Nam Kỳ KN,residential,residential,169,169,0,823,1.0
+2026-05-09 22:46:50,normal,v04,v10,Lê Văn Sỹ - N.Đ.Chiểu,Pasteur - Lê Duẩn,residential,mixed,326,326,0,1604,1.0
+2026-05-09 22:46:50,normal,v05,v01,CMT8 - Điện Biên Phủ,Bến Thành,arterial,commercial,495,495,0,2716,1.0
+2026-05-09 22:46:50,normal,v05,v02,CMT8 - Điện Biên Phủ,Điện Biên Phủ - Hai BT,arterial,arterial,225,225,0,1294,1.0
+2026-05-09 22:46:50,normal,v05,v03,CMT8 - Điện Biên Phủ,Vòng xoay Dân Chủ,arterial,roundabout,329,329,0,1772,1.0
+2026-05-09 22:46:50,normal,v05,v04,CMT8 - Điện Biên Phủ,Lê Văn Sỹ - N.Đ.Chiểu,arterial,residential,269,269,0,1305,1.0
+2026-05-09 22:46:50,normal,v05,v06,CMT8 - Điện Biên Phủ,Cầu Sài Gòn,arterial,bridge,750,750,0,5699,1.0
+2026-05-09 22:46:50,normal,v05,v07,CMT8 - Điện Biên Phủ,Nguyễn Huệ - Lê Lợi,arterial,commercial,625,625,0,3221,1.0
+2026-05-09 22:46:50,normal,v05,v08,CMT8 - Điện Biên Phủ,Hàm Nghi - Tôn Đức Thắng,arterial,commercial,678,672,6,3364,1.009
+2026-05-09 22:46:50,normal,v05,v09,CMT8 - Điện Biên Phủ,Võ Văn Tần - Nam Kỳ KN,arterial,residential,288,288,0,1631,1.0
+2026-05-09 22:46:50,normal,v05,v10,CMT8 - Điện Biên Phủ,Pasteur - Lê Duẩn,arterial,mixed,392,392,0,2082,1.0
+2026-05-09 22:46:50,normal,v06,v01,Cầu Sài Gòn,Bến Thành,bridge,commercial,865,865,0,5453,1.0
+2026-05-09 22:46:50,normal,v06,v02,Cầu Sài Gòn,Điện Biên Phủ - Hai BT,bridge,arterial,589,589,0,4972,1.0
+2026-05-09 22:46:50,normal,v06,v03,Cầu Sài Gòn,Vòng xoay Dân Chủ,bridge,roundabout,834,834,0,5916,1.0
+2026-05-09 22:46:50,normal,v06,v04,Cầu Sài Gòn,Lê Văn Sỹ - N.Đ.Chiểu,bridge,residential,653,653,0,5393,1.0
+2026-05-09 22:46:50,normal,v06,v05,Cầu Sài Gòn,CMT8 - Điện Biên Phủ,bridge,arterial,795,795,0,6311,1.0
+2026-05-09 22:46:50,normal,v06,v07,Cầu Sài Gòn,Nguyễn Huệ - Lê Lợi,bridge,commercial,842,842,0,5090,1.0
+2026-05-09 22:46:50,normal,v06,v08,Cầu Sài Gòn,Hàm Nghi - Tôn Đức Thắng,bridge,commercial,743,743,0,5142,1.0
+2026-05-09 22:46:50,normal,v06,v09,Cầu Sài Gòn,Võ Văn Tần - Nam Kỳ KN,bridge,residential,775,775,0,5775,1.0
+2026-05-09 22:46:50,normal,v06,v10,Cầu Sài Gòn,Pasteur - Lê Duẩn,bridge,mixed,731,731,0,4846,1.0
+2026-05-09 22:46:50,normal,v07,v01,Nguyễn Huệ - Lê Lợi,Bến Thành,commercial,commercial,217,217,0,889,1.0
+2026-05-09 22:46:50,normal,v07,v02,Nguyễn Huệ - Lê Lợi,Điện Biên Phủ - Hai BT,commercial,arterial,516,516,0,2371,1.0
+2026-05-09 22:46:50,normal,v07,v03,Nguyễn Huệ - Lê Lợi,Vòng xoay Dân Chủ,commercial,roundabout,425,425,0,1788,1.0
+2026-05-09 22:46:50,normal,v07,v04,Nguyễn Huệ - Lê Lợi,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,481,481,0,2275,1.0
+2026-05-09 22:46:50,normal,v07,v05,Nguyễn Huệ - Lê Lợi,CMT8 - Điện Biên Phủ,commercial,arterial,623,623,0,3192,1.0
+2026-05-09 22:46:50,normal,v07,v06,Nguyễn Huệ - Lê Lợi,Cầu Sài Gòn,commercial,bridge,730,730,0,5053,1.0
+2026-05-09 22:46:50,normal,v07,v08,Nguyễn Huệ - Lê Lợi,Hàm Nghi - Tôn Đức Thắng,commercial,commercial,72,72,0,231,1.0
+2026-05-09 22:46:50,normal,v07,v09,Nguyễn Huệ - Lê Lợi,Võ Văn Tần - Nam Kỳ KN,commercial,residential,423,423,0,1957,1.0
+2026-05-09 22:46:50,normal,v07,v10,Nguyễn Huệ - Lê Lợi,Pasteur - Lê Duẩn,commercial,mixed,346,346,0,1512,1.0
+2026-05-09 22:46:50,normal,v08,v01,Hàm Nghi - Tôn Đức Thắng,Bến Thành,commercial,commercial,260,260,0,1032,1.0
+2026-05-09 22:46:50,normal,v08,v02,Hàm Nghi - Tôn Đức Thắng,Điện Biên Phủ - Hai BT,commercial,arterial,559,559,0,2515,1.0
+2026-05-09 22:46:50,normal,v08,v03,Hàm Nghi - Tôn Đức Thắng,Vòng xoay Dân Chủ,commercial,roundabout,468,468,0,1932,1.0
+2026-05-09 22:46:50,normal,v08,v04,Hàm Nghi - Tôn Đức Thắng,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,524,524,0,2419,1.0
+2026-05-09 22:46:50,normal,v08,v05,Hàm Nghi - Tôn Đức Thắng,CMT8 - Điện Biên Phủ,commercial,arterial,666,666,0,3336,1.0
+2026-05-09 22:46:50,normal,v08,v06,Hàm Nghi - Tôn Đức Thắng,Cầu Sài Gòn,commercial,bridge,707,707,0,4887,1.0
+2026-05-09 22:46:50,normal,v08,v07,Hàm Nghi - Tôn Đức Thắng,Nguyễn Huệ - Lê Lợi,commercial,commercial,236,236,0,863,1.0
+2026-05-09 22:46:50,normal,v08,v09,Hàm Nghi - Tôn Đức Thắng,Võ Văn Tần - Nam Kỳ KN,commercial,residential,466,466,0,2100,1.0
+2026-05-09 22:46:50,normal,v08,v10,Hàm Nghi - Tôn Đức Thắng,Pasteur - Lê Duẩn,commercial,mixed,390,390,0,1655,1.0
+2026-05-09 22:46:50,normal,v09,v01,Võ Văn Tần - Nam Kỳ KN,Bến Thành,residential,commercial,416,416,0,2073,1.0
+2026-05-09 22:46:50,normal,v09,v02,Võ Văn Tần - Nam Kỳ KN,Điện Biên Phủ - Hai BT,residential,arterial,287,287,0,1424,1.0
+2026-05-09 22:46:50,normal,v09,v03,Võ Văn Tần - Nam Kỳ KN,Vòng xoay Dân Chủ,residential,roundabout,266,266,0,1178,1.0
+2026-05-09 22:46:50,normal,v09,v04,Võ Văn Tần - Nam Kỳ KN,Lê Văn Sỹ - N.Đ.Chiểu,residential,residential,223,223,0,1055,1.0
+2026-05-09 22:46:50,normal,v09,v05,Võ Văn Tần - Nam Kỳ KN,CMT8 - Điện Biên Phủ,residential,arterial,213,213,0,1247,1.0
+2026-05-09 22:46:50,normal,v09,v06,Võ Văn Tần - Nam Kỳ KN,Cầu Sài Gòn,residential,bridge,709,709,0,5442,1.0
+2026-05-09 22:46:50,normal,v09,v07,Võ Văn Tần - Nam Kỳ KN,Nguyễn Huệ - Lê Lợi,residential,commercial,537,537,0,2522,1.0
+2026-05-09 22:46:50,normal,v09,v08,Võ Văn Tần - Nam Kỳ KN,Hàm Nghi - Tôn Đức Thắng,residential,commercial,546,546,0,2610,1.0
+2026-05-09 22:46:50,normal,v09,v10,Võ Văn Tần - Nam Kỳ KN,Pasteur - Lê Duẩn,residential,mixed,329,329,0,1488,1.0
+2026-05-09 22:46:50,normal,v10,v01,Pasteur - Lê Duẩn,Bến Thành,mixed,commercial,324,324,0,1577,1.0
+2026-05-09 22:46:50,normal,v10,v02,Pasteur - Lê Duẩn,Điện Biên Phủ - Hai BT,mixed,arterial,188,188,0,890,1.0
+2026-05-09 22:46:50,normal,v10,v03,Pasteur - Lê Duẩn,Vòng xoay Dân Chủ,mixed,roundabout,254,254,0,1038,1.0
+2026-05-09 22:46:50,normal,v10,v04,Pasteur - Lê Duẩn,Lê Văn Sỹ - N.Đ.Chiểu,mixed,residential,302,302,0,1422,1.0
+2026-05-09 22:46:50,normal,v10,v05,Pasteur - Lê Duẩn,CMT8 - Điện Biên Phủ,mixed,arterial,444,444,0,2339,1.0
+2026-05-09 22:46:50,normal,v10,v06,Pasteur - Lê Duẩn,Cầu Sài Gòn,mixed,bridge,590,590,0,4232,1.0
+2026-05-09 22:46:50,normal,v10,v07,Pasteur - Lê Duẩn,Nguyễn Huệ - Lê Lợi,mixed,commercial,344,344,0,1542,1.0
+2026-05-09 22:46:50,normal,v10,v08,Pasteur - Lê Duẩn,Hàm Nghi - Tôn Đức Thắng,mixed,commercial,416,416,0,1773,1.0
+2026-05-09 22:46:50,normal,v10,v09,Pasteur - Lê Duẩn,Võ Văn Tần - Nam Kỳ KN,mixed,residential,240,240,0,1147,1.0
+2026-05-09 22:52:46,normal,v01,v02,Bến Thành,Điện Biên Phủ - Hai BT,commercial,arterial,499,499,0,2676,1.0
+2026-05-09 22:52:46,normal,v01,v03,Bến Thành,Vòng xoay Dân Chủ,commercial,roundabout,249,249,0,1506,1.0
+2026-05-09 22:52:46,normal,v01,v04,Bến Thành,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,455,455,0,2334,1.0
+2026-05-09 22:52:46,normal,v01,v05,Bến Thành,CMT8 - Điện Biên Phủ,commercial,arterial,453,453,0,2512,1.0
+2026-05-09 22:52:46,normal,v01,v06,Bến Thành,Cầu Sài Gòn,commercial,bridge,879,879,0,5562,1.0
+2026-05-09 22:52:46,normal,v01,v07,Bến Thành,Nguyễn Huệ - Lê Lợi,commercial,commercial,339,339,0,1547,1.0
+2026-05-09 22:52:46,normal,v01,v08,Bến Thành,Hàm Nghi - Tôn Đức Thắng,commercial,commercial,322,322,0,1453,1.0
+2026-05-09 22:52:46,normal,v01,v09,Bến Thành,Võ Văn Tần - Nam Kỳ KN,commercial,residential,300,300,0,1658,1.0
+2026-05-09 22:52:46,normal,v01,v10,Bến Thành,Pasteur - Lê Duẩn,commercial,mixed,312,312,0,1816,1.0
+2026-05-09 22:52:46,normal,v02,v01,Điện Biên Phủ - Hai BT,Bến Thành,arterial,commercial,433,433,0,2305,1.0
+2026-05-09 22:52:46,normal,v02,v03,Điện Biên Phủ - Hai BT,Vòng xoay Dân Chủ,arterial,roundabout,291,291,0,1414,1.0
+2026-05-09 22:52:46,normal,v02,v04,Điện Biên Phủ - Hai BT,Lê Văn Sỹ - N.Đ.Chiểu,arterial,residential,114,114,0,531,1.0
+2026-05-09 22:52:46,normal,v02,v05,Điện Biên Phủ - Hai BT,CMT8 - Điện Biên Phủ,arterial,arterial,255,255,0,1448,1.0
+2026-05-09 22:52:46,normal,v02,v06,Điện Biên Phủ - Hai BT,Cầu Sài Gòn,arterial,bridge,525,525,0,4405,1.0
+2026-05-09 22:52:46,normal,v02,v07,Điện Biên Phủ - Hai BT,Nguyễn Huệ - Lê Lợi,arterial,commercial,472,472,0,2276,1.0
+2026-05-09 22:52:46,normal,v02,v08,Điện Biên Phủ - Hai BT,Hàm Nghi - Tôn Đức Thắng,arterial,commercial,544,544,0,2507,1.0
+2026-05-09 22:52:46,normal,v02,v09,Điện Biên Phủ - Hai BT,Võ Văn Tần - Nam Kỳ KN,arterial,residential,232,232,0,1274,1.0
+2026-05-09 22:52:46,normal,v02,v10,Điện Biên Phủ - Hai BT,Pasteur - Lê Duẩn,arterial,mixed,247,247,0,1217,1.0
+2026-05-09 22:52:46,normal,v03,v01,Vòng xoay Dân Chủ,Bến Thành,roundabout,commercial,297,297,0,1528,1.0
+2026-05-09 22:52:46,normal,v03,v02,Vòng xoay Dân Chủ,Điện Biên Phủ - Hai BT,roundabout,arterial,251,251,0,1170,1.0
+2026-05-09 22:52:46,normal,v03,v04,Vòng xoay Dân Chủ,Lê Văn Sỹ - N.Đ.Chiểu,roundabout,residential,216,216,0,1074,1.0
+2026-05-09 22:52:46,normal,v03,v05,Vòng xoay Dân Chủ,CMT8 - Điện Biên Phủ,roundabout,arterial,358,358,0,1991,1.0
+2026-05-09 22:52:46,normal,v03,v06,Vòng xoay Dân Chủ,Cầu Sài Gòn,roundabout,bridge,653,653,0,4543,1.0
+2026-05-09 22:52:46,normal,v03,v07,Vòng xoay Dân Chủ,Nguyễn Huệ - Lê Lợi,roundabout,commercial,330,330,0,1487,1.0
+2026-05-09 22:52:46,normal,v03,v08,Vòng xoay Dân Chủ,Hàm Nghi - Tôn Đức Thắng,roundabout,commercial,402,402,0,1718,1.0
+2026-05-09 22:52:46,normal,v03,v09,Vòng xoay Dân Chủ,Võ Văn Tần - Nam Kỳ KN,roundabout,residential,158,158,0,756,1.0
+2026-05-09 22:52:46,normal,v03,v10,Vòng xoay Dân Chủ,Pasteur - Lê Duẩn,roundabout,mixed,63,63,0,311,1.0
+2026-05-09 22:52:46,normal,v04,v01,Lê Văn Sỹ - N.Đ.Chiểu,Bến Thành,residential,commercial,414,414,0,2187,1.0
+2026-05-09 22:52:46,normal,v04,v02,Lê Văn Sỹ - N.Đ.Chiểu,Điện Biên Phủ - Hai BT,residential,arterial,263,263,0,1215,1.0
+2026-05-09 22:52:46,normal,v04,v03,Lê Văn Sỹ - N.Đ.Chiểu,Vòng xoay Dân Chủ,residential,roundabout,262,262,0,1294,1.0
+2026-05-09 22:52:46,normal,v04,v05,Lê Văn Sỹ - N.Đ.Chiểu,CMT8 - Điện Biên Phủ,residential,arterial,142,142,0,917,1.0
+2026-05-09 22:52:46,normal,v04,v06,Lê Văn Sỹ - N.Đ.Chiểu,Cầu Sài Gòn,residential,bridge,685,685,0,5233,1.0
+2026-05-09 22:52:46,normal,v04,v07,Lê Văn Sỹ - N.Đ.Chiểu,Nguyễn Huệ - Lê Lợi,residential,commercial,535,535,0,2636,1.0
+2026-05-09 22:52:46,normal,v04,v08,Lê Văn Sỹ - N.Đ.Chiểu,Hàm Nghi - Tôn Đức Thắng,residential,commercial,544,544,0,2724,1.0
+2026-05-09 22:52:46,normal,v04,v09,Lê Văn Sỹ - N.Đ.Chiểu,Võ Văn Tần - Nam Kỳ KN,residential,residential,169,169,0,823,1.0
+2026-05-09 22:52:46,normal,v04,v10,Lê Văn Sỹ - N.Đ.Chiểu,Pasteur - Lê Duẩn,residential,mixed,326,326,0,1604,1.0
+2026-05-09 22:52:46,normal,v05,v01,CMT8 - Điện Biên Phủ,Bến Thành,arterial,commercial,471,471,0,2662,1.0
+2026-05-09 22:52:46,normal,v05,v02,CMT8 - Điện Biên Phủ,Điện Biên Phủ - Hai BT,arterial,arterial,225,225,0,1294,1.0
+2026-05-09 22:52:46,normal,v05,v03,CMT8 - Điện Biên Phủ,Vòng xoay Dân Chủ,arterial,roundabout,329,329,0,1772,1.0
+2026-05-09 22:52:46,normal,v05,v04,CMT8 - Điện Biên Phủ,Lê Văn Sỹ - N.Đ.Chiểu,arterial,residential,269,269,0,1305,1.0
+2026-05-09 22:52:46,normal,v05,v06,CMT8 - Điện Biên Phủ,Cầu Sài Gòn,arterial,bridge,750,750,0,5699,1.0
+2026-05-09 22:52:46,normal,v05,v07,CMT8 - Điện Biên Phủ,Nguyễn Huệ - Lê Lợi,arterial,commercial,592,592,0,3111,1.0
+2026-05-09 22:52:46,normal,v05,v08,CMT8 - Điện Biên Phủ,Hàm Nghi - Tôn Đức Thắng,arterial,commercial,601,601,0,3199,1.0
+2026-05-09 22:52:46,normal,v05,v09,CMT8 - Điện Biên Phủ,Võ Văn Tần - Nam Kỳ KN,arterial,residential,288,288,0,1631,1.0
+2026-05-09 22:52:46,normal,v05,v10,CMT8 - Điện Biên Phủ,Pasteur - Lê Duẩn,arterial,mixed,392,392,0,2082,1.0
+2026-05-09 22:52:46,normal,v06,v01,Cầu Sài Gòn,Bến Thành,bridge,commercial,865,865,0,5453,1.0
+2026-05-09 22:52:46,normal,v06,v02,Cầu Sài Gòn,Điện Biên Phủ - Hai BT,bridge,arterial,589,589,0,4972,1.0
+2026-05-09 22:52:46,normal,v06,v03,Cầu Sài Gòn,Vòng xoay Dân Chủ,bridge,roundabout,834,834,0,5916,1.0
+2026-05-09 22:52:46,normal,v06,v04,Cầu Sài Gòn,Lê Văn Sỹ - N.Đ.Chiểu,bridge,residential,653,653,0,5393,1.0
+2026-05-09 22:52:46,normal,v06,v05,Cầu Sài Gòn,CMT8 - Điện Biên Phủ,bridge,arterial,795,795,0,6311,1.0
+2026-05-09 22:52:46,normal,v06,v07,Cầu Sài Gòn,Nguyễn Huệ - Lê Lợi,bridge,commercial,842,842,0,5090,1.0
+2026-05-09 22:52:46,normal,v06,v08,Cầu Sài Gòn,Hàm Nghi - Tôn Đức Thắng,bridge,commercial,743,743,0,5142,1.0
+2026-05-09 22:52:46,normal,v06,v09,Cầu Sài Gòn,Võ Văn Tần - Nam Kỳ KN,bridge,residential,775,775,0,5775,1.0
+2026-05-09 22:52:46,normal,v06,v10,Cầu Sài Gòn,Pasteur - Lê Duẩn,bridge,mixed,731,731,0,4846,1.0
+2026-05-09 22:52:46,normal,v07,v01,Nguyễn Huệ - Lê Lợi,Bến Thành,commercial,commercial,217,217,0,889,1.0
+2026-05-09 22:52:46,normal,v07,v02,Nguyễn Huệ - Lê Lợi,Điện Biên Phủ - Hai BT,commercial,arterial,516,516,0,2371,1.0
+2026-05-09 22:52:46,normal,v07,v03,Nguyễn Huệ - Lê Lợi,Vòng xoay Dân Chủ,commercial,roundabout,425,425,0,1788,1.0
+2026-05-09 22:52:46,normal,v07,v04,Nguyễn Huệ - Lê Lợi,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,481,481,0,2275,1.0
+2026-05-09 22:52:46,normal,v07,v05,Nguyễn Huệ - Lê Lợi,CMT8 - Điện Biên Phủ,commercial,arterial,623,623,0,3192,1.0
+2026-05-09 22:52:46,normal,v07,v06,Nguyễn Huệ - Lê Lợi,Cầu Sài Gòn,commercial,bridge,730,730,0,5053,1.0
+2026-05-09 22:52:46,normal,v07,v08,Nguyễn Huệ - Lê Lợi,Hàm Nghi - Tôn Đức Thắng,commercial,commercial,72,72,0,231,1.0
+2026-05-09 22:52:46,normal,v07,v09,Nguyễn Huệ - Lê Lợi,Võ Văn Tần - Nam Kỳ KN,commercial,residential,423,423,0,1957,1.0
+2026-05-09 22:52:46,normal,v07,v10,Nguyễn Huệ - Lê Lợi,Pasteur - Lê Duẩn,commercial,mixed,346,346,0,1512,1.0
+2026-05-09 22:52:46,normal,v08,v01,Hàm Nghi - Tôn Đức Thắng,Bến Thành,commercial,commercial,260,260,0,1032,1.0
+2026-05-09 22:52:46,normal,v08,v02,Hàm Nghi - Tôn Đức Thắng,Điện Biên Phủ - Hai BT,commercial,arterial,559,559,0,2515,1.0
+2026-05-09 22:52:46,normal,v08,v03,Hàm Nghi - Tôn Đức Thắng,Vòng xoay Dân Chủ,commercial,roundabout,468,468,0,1932,1.0
+2026-05-09 22:52:46,normal,v08,v04,Hàm Nghi - Tôn Đức Thắng,Lê Văn Sỹ - N.Đ.Chiểu,commercial,residential,524,524,0,2419,1.0
+2026-05-09 22:52:46,normal,v08,v05,Hàm Nghi - Tôn Đức Thắng,CMT8 - Điện Biên Phủ,commercial,arterial,666,666,0,3336,1.0
+2026-05-09 22:52:46,normal,v08,v06,Hàm Nghi - Tôn Đức Thắng,Cầu Sài Gòn,commercial,bridge,707,707,0,4887,1.0
+2026-05-09 22:52:46,normal,v08,v07,Hàm Nghi - Tôn Đức Thắng,Nguyễn Huệ - Lê Lợi,commercial,commercial,236,236,0,863,1.0
+2026-05-09 22:52:46,normal,v08,v09,Hàm Nghi - Tôn Đức Thắng,Võ Văn Tần - Nam Kỳ KN,commercial,residential,466,466,0,2100,1.0
+2026-05-09 22:52:46,normal,v08,v10,Hàm Nghi - Tôn Đức Thắng,Pasteur - Lê Duẩn,commercial,mixed,390,390,0,1655,1.0
+2026-05-09 22:52:46,normal,v09,v01,Võ Văn Tần - Nam Kỳ KN,Bến Thành,residential,commercial,416,416,0,2073,1.0
+2026-05-09 22:52:46,normal,v09,v02,Võ Văn Tần - Nam Kỳ KN,Điện Biên Phủ - Hai BT,residential,arterial,287,287,0,1424,1.0
+2026-05-09 22:52:46,normal,v09,v03,Võ Văn Tần - Nam Kỳ KN,Vòng xoay Dân Chủ,residential,roundabout,266,266,0,1178,1.0
+2026-05-09 22:52:46,normal,v09,v04,Võ Văn Tần - Nam Kỳ KN,Lê Văn Sỹ - N.Đ.Chiểu,residential,residential,223,223,0,1055,1.0
+2026-05-09 22:52:46,normal,v09,v05,Võ Văn Tần - Nam Kỳ KN,CMT8 - Điện Biên Phủ,residential,arterial,213,213,0,1247,1.0
+2026-05-09 22:52:46,normal,v09,v06,Võ Văn Tần - Nam Kỳ KN,Cầu Sài Gòn,residential,bridge,709,709,0,5442,1.0
+2026-05-09 22:52:46,normal,v09,v07,Võ Văn Tần - Nam Kỳ KN,Nguyễn Huệ - Lê Lợi,residential,commercial,537,537,0,2522,1.0
+2026-05-09 22:52:46,normal,v09,v08,Võ Văn Tần - Nam Kỳ KN,Hàm Nghi - Tôn Đức Thắng,residential,commercial,546,546,0,2610,1.0
+2026-05-09 22:52:46,normal,v09,v10,Võ Văn Tần - Nam Kỳ KN,Pasteur - Lê Duẩn,residential,mixed,329,329,0,1488,1.0
+2026-05-09 22:52:46,normal,v10,v01,Pasteur - Lê Duẩn,Bến Thành,mixed,commercial,324,324,0,1577,1.0
+2026-05-09 22:52:46,normal,v10,v02,Pasteur - Lê Duẩn,Điện Biên Phủ - Hai BT,mixed,arterial,225,225,0,1159,1.0
+2026-05-09 22:52:46,normal,v10,v03,Pasteur - Lê Duẩn,Vòng xoay Dân Chủ,mixed,roundabout,280,280,0,1289,1.0
+2026-05-09 22:52:46,normal,v10,v04,Pasteur - Lê Duẩn,Lê Văn Sỹ - N.Đ.Chiểu,mixed,residential,333,333,0,1726,1.0
+2026-05-09 22:52:46,normal,v10,v05,Pasteur - Lê Duẩn,CMT8 - Điện Biên Phủ,mixed,arterial,470,470,0,2655,1.0
+2026-05-09 22:52:46,normal,v10,v06,Pasteur - Lê Duẩn,Cầu Sài Gòn,mixed,bridge,590,590,0,4232,1.0
+2026-05-09 22:52:46,normal,v10,v07,Pasteur - Lê Duẩn,Nguyễn Huệ - Lê Lợi,mixed,commercial,344,344,0,1542,1.0
+2026-05-09 22:52:46,normal,v10,v08,Pasteur - Lê Duẩn,Hàm Nghi - Tôn Đức Thắng,mixed,commercial,416,416,0,1773,1.0
+2026-05-09 22:52:46,normal,v10,v09,Pasteur - Lê Duẩn,Võ Văn Tần - Nam Kỳ KN,mixed,residential,257,257,0,1408,1.0

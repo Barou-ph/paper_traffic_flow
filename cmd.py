@@ -1,0 +1,1 @@
+python tomtom_collector.py --hours 3 --interval_min 5
