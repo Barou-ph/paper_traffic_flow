@@ -1,0 +1,24 @@
+{
+  "total_rows": 13230,
+  "total_snapshots": 147,
+  "n_nodes": 10,
+  "n_edges": 90,
+  "X_shape": [
+    147,
+    10,
+    6
+  ],
+  "Y_shape": [
+    147,
+    90
+  ],
+  "Y_mean_travel_time_s": 618.68701171875,
+  "Y_std_travel_time_s": 273.6343688964844,
+  "Y_min": 63.0,
+  "Y_max": 1470.0,
+  "train_snapshots": 102,
+  "val_snapshots": 22,
+  "test_snapshots": 23,
+  "KS_mean_divergence": 0.2591859996318817,
+  "granger_causal_links": 0
+}
