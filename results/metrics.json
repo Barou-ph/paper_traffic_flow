@@ -1,0 +1,26 @@
+{
+  "model": "AH-GNN",
+  "metrics": {
+    "MAE": 208.4213,
+    "RMSE": 245.2072,
+    "MAPE": 88.3123
+  },
+  "config": {
+    "dataset_dir": "dataset",
+    "ckpt_dir": "checkpoints",
+    "results_dir": "results",
+    "seq_len": 6,
+    "pred_len": 1,
+    "hidden_dim": 32,
+    "embed_dim": 16,
+    "n_layers": 2,
+    "batch_size": 16,
+    "lr": 0.001,
+    "epochs": 100,
+    "patience": 15,
+    "device": "cuda"
+  },
+  "best_epoch": 34,
+  "y_mean": 585.1387939453125,
+  "y_std": 270.3654479980469
+}
