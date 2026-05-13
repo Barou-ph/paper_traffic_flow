@@ -1,28 +1,24 @@
 """
-TomTom Fast Collector — Async version
-======================================
-Dùng asyncio + aiohttp để query 90 cặp song song
-Nhanh hơn ~5-7x so với version tuần tự
+TomTom Fast Collector v3 — Sync + ThreadPool
+=============================================
+Dùng ThreadPoolExecutor để chạy song song
+Ổn định hơn async, ít bị rate limit hơn
+Tốc độ: ~8-12s/snapshot (90 cặp)
 
-Cài thêm: pip install aiohttp
-Dùng    : python tomtom_collector_fast.py --hours 2 --interval_min 3
+Cài: pip install requests pandas python-dotenv
+Dùng: python tomtom_collector_fast.py --hours 2 --interval_min 3
 """
 
-import asyncio
-import aiohttp
+import requests
 import pandas as pd
-import os
-import time
-import argparse
+import os, time, argparse
 from datetime import datetime
 from itertools import permutations
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dotenv import load_dotenv
 
 load_dotenv()
 
-# ─────────────────────────────────────────────
-# NODES — Quận 1, TP.HCM
-# ─────────────────────────────────────────────
 NODES = {
     "v01": {
         "name": "Bến Thành",
@@ -85,30 +81,24 @@ NODES = {
         "poi_type": "mixed",
     },
 }
-
 EDGES = list(permutations(NODES.keys(), 2))  # 90 cặp
-
-TIME_LABELS = {
-    range(0, 6): "night",
-    range(7, 10): "rush_morning",
-    range(16, 20): "rush_evening",
-}
 
 
 def get_time_label(hour):
-    for r, label in TIME_LABELS.items():
-        if hour in r:
-            return label
+    if hour in range(0, 6):
+        return "night"
+    if hour in range(7, 10):
+        return "rush_morning"
+    if hour in range(16, 20):
+        return "rush_evening"
     return "normal"
 
 
 # ─────────────────────────────────────────────
-# ASYNC ETA QUERY
+# FETCH 1 CẶP (chạy trong thread riêng)
 # ─────────────────────────────────────────────
-async def fetch_eta(session, api_key, src_id, dst_id, semaphore):
-    """Query 1 cặp nút bất đồng bộ, có semaphore để giới hạn concurrent"""
-    src = NODES[src_id]
-    dst = NODES[dst_id]
+def fetch_eta(api_key, src_id, dst_id):
+    src, dst = NODES[src_id], NODES[dst_id]
     url = (
         f"https://api.tomtom.com/routing/1/calculateRoute/"
         f"{src['lat']},{src['lon']}:{dst['lat']},{dst['lon']}/json"
@@ -119,69 +109,65 @@ async def fetch_eta(session, api_key, src_id, dst_id, semaphore):
         "travelMode": "car",
         "key": api_key,
     }
-    async with semaphore:
-        try:
-            async with session.get(
-                url, params=params, timeout=aiohttp.ClientTimeout(total=15)
-            ) as r:
-                if r.status != 200:
-                    return None
-                data = await r.json()
-                s = data["routes"][0]["summary"]
-                tt = s.get("travelTimeInSeconds", 0)
-                ff = s.get("noTrafficTravelTimeInSeconds") or 0
-                dl = s.get("trafficDelayInSeconds", 0)
-                lm = s.get("lengthInMeters", 0)
-                if ff and ff > 0:
-                    ratio = round(tt / ff, 3)
-                elif tt > 0:
-                    ratio = round(1 + (dl / tt), 3)
-                else:
-                    ratio = 1.0
-                return {
-                    "src_node": src_id,
-                    "dst_node": dst_id,
-                    "src_name": src["name"],
-                    "dst_name": dst["name"],
-                    "src_poi": src["poi_type"],
-                    "dst_poi": dst["poi_type"],
-                    "travel_time_s": tt,
-                    "free_flow_time_s": ff,
-                    "traffic_delay_s": dl,
-                    "length_m": lm,
-                    "congestion_ratio": ratio,
-                }
-        except Exception:
+    try:
+        r = requests.get(url, params=params, timeout=10)
+        if r.status_code != 200:
             return None
+        s = r.json()["routes"][0]["summary"]
+        tt = s.get("travelTimeInSeconds", 0)
+        ff = s.get("noTrafficTravelTimeInSeconds") or 0
+        dl = s.get("trafficDelayInSeconds", 0)
+        lm = s.get("lengthInMeters", 0)
+        ratio = (
+            round(tt / ff, 3) if ff > 0 else round(1 + dl / tt, 3) if tt > 0 else 1.0
+        )
+        return {
+            "src_node": src_id,
+            "dst_node": dst_id,
+            "src_name": src["name"],
+            "dst_name": dst["name"],
+            "src_poi": src["poi_type"],
+            "dst_poi": dst["poi_type"],
+            "travel_time_s": tt,
+            "free_flow_time_s": ff,
+            "traffic_delay_s": dl,
+            "length_m": lm,
+            "congestion_ratio": ratio,
+        }
+    except Exception:
+        return None
 
 
-async def collect_snapshot_async(api_key, output_dir, max_concurrent=15):
-    """Thu thập 1 snapshot — tất cả 90 cặp song song (max 15 cùng lúc)"""
+# ─────────────────────────────────────────────
+# COLLECT 1 SNAPSHOT với ThreadPool
+# ─────────────────────────────────────────────
+def collect_snapshot(api_key, output_dir, n_workers=8):
     now = datetime.now()
     timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
     time_label = get_time_label(now.hour)
-
-    semaphore = asyncio.Semaphore(max_concurrent)
-    connector = aiohttp.TCPConnector(limit=max_concurrent)
-
     t0 = time.time()
-    async with aiohttp.ClientSession(connector=connector) as session:
-        tasks = [fetch_eta(session, api_key, src, dst, semaphore) for src, dst in EDGES]
-        results = await asyncio.gather(*tasks)
-
-    elapsed = time.time() - t0
 
     records = []
     errors = 0
-    for r in results:
-        if r is None:
-            errors += 1
-            continue
-        r["timestamp"] = timestamp
-        r["time_label"] = time_label
-        records.append(r)
 
-    # Sắp xếp cột cho nhất quán với file cũ
+    # Chia 90 cặp thành batch, mỗi batch 10 cặp, delay nhỏ giữa batch
+    batch_size = 10
+    batches = [EDGES[i : i + batch_size] for i in range(0, len(EDGES), batch_size)]
+
+    for batch in batches:
+        with ThreadPoolExecutor(max_workers=n_workers) as ex:
+            futures = {ex.submit(fetch_eta, api_key, s, d): (s, d) for s, d in batch}
+            for fut in as_completed(futures):
+                r = fut.result()
+                if r:
+                    r["timestamp"] = timestamp
+                    r["time_label"] = time_label
+                    records.append(r)
+                else:
+                    errors += 1
+        time.sleep(0.3)  # delay nhỏ giữa batch để tránh rate limit
+
+    # Lưu CSV
     cols = [
         "timestamp",
         "time_label",
@@ -197,90 +183,65 @@ async def collect_snapshot_async(api_key, output_dir, max_concurrent=15):
         "length_m",
         "congestion_ratio",
     ]
-
     if records:
-        df = pd.DataFrame(records)[cols]
         os.makedirs(output_dir, exist_ok=True)
         out = os.path.join(output_dir, "eta_data.csv")
-        df.to_csv(out, mode="a", header=not os.path.exists(out), index=False)
+        pd.DataFrame(records)[cols].to_csv(
+            out, mode="a", header=not os.path.exists(out), index=False
+        )
 
-    ok = len(records)
+    elapsed = time.time() - t0
     print(
         f"  [{timestamp}] ({time_label}) "
-        f"✓ {ok}/90 records  ✗ {errors} errors  ⏱ {elapsed:.1f}s"
+        f"✓ {len(records)}/90  ✗ {errors} errors  ⏱ {elapsed:.1f}s"
     )
-    return ok
-
-
-# ─────────────────────────────────────────────
-# TEST CONNECTION
-# ─────────────────────────────────────────────
-async def test_connection(api_key):
-    sem = asyncio.Semaphore(1)
-    async with aiohttp.ClientSession() as session:
-        r = await fetch_eta(session, api_key, "v01", "v07", sem)
-        return r is not None
+    return len(records)
 
 
 # ─────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────
-async def main_async(args, api_key):
-    print("🔍 Kiểm tra kết nối API...")
-    ok = await test_connection(api_key)
-    if not ok:
-        print("❌ API key không hoạt động!")
-        return
-    print("✅ API key OK!\n")
-
-    total = int((args.hours * 60) / args.interval_min)
-    interval_s = args.interval_min * 60
-
-    print("=" * 58)
-    print("  TomTom FAST Collector (Async) — Quận 1 TP.HCM")
-    print("=" * 58)
-    print(f"  Edges      : {len(EDGES)} cặp (all-pairs)")
-    print(f"  Concurrent : 15 requests/lúc")
-    print(f"  Interval   : {args.interval_min} phút")
-    print(f"  Duration   : {args.hours} giờ ({total} snapshots)")
-    print(f"  API calls  : ~{total * len(EDGES)} total")
-    print(f"  Tốc độ     : ~5-8s/snapshot (vs ~36s trước)")
-    print(f"  Output     : {args.output_dir}/eta_data.csv")
-    print("=" * 58)
-
-    total_records = 0
-    for i in range(total):
-        print(f"\n[Snapshot {i+1}/{total}]")
-        n = await collect_snapshot_async(api_key, args.output_dir, max_concurrent=15)
-        total_records += n
-
-        if i < total - 1:
-            print(f"  ⏳ Chờ {args.interval_min} phút...")
-            await asyncio.sleep(interval_s)
-
-    print(f"\n✅ Hoàn thành! Tổng: {total_records} records mới")
-    print(f"   → {args.output_dir}/eta_data.csv")
-
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--api_key", default=None)
-    parser.add_argument(
-        "--interval_min",
-        type=int,
-        default=3,
-        help="Khoảng cách giữa snapshots (phút), default=3",
-    )
+    parser.add_argument("--interval_min", type=int, default=3)
     parser.add_argument("--hours", type=float, default=1.0)
     parser.add_argument("--output_dir", default="tomtom_data")
     args = parser.parse_args()
 
     api_key = args.api_key or os.getenv("TOMTOM_API_KEY")
     if not api_key:
-        print("❌ Thiếu API key! Thêm vào .env: TOMTOM_API_KEY=your_key")
+        print("❌ Thiếu API key!")
         return
 
-    asyncio.run(main_async(args, api_key))
+    # Test
+    print("🔍 Kiểm tra API...")
+    test = fetch_eta(api_key, "v01", "v07")
+    if not test:
+        print("❌ API key không hoạt động!")
+        return
+    print("✅ OK!\n")
+
+    total = int((args.hours * 60) / args.interval_min)
+    interval_s = args.interval_min * 60
+
+    print("=" * 55)
+    print("  TomTom Collector v3 (ThreadPool) — Quận 1")
+    print("=" * 55)
+    print(f"  Edges    : {len(EDGES)} cặp | Workers: 8 threads")
+    print(f"  Interval : {args.interval_min} phút | Duration: {args.hours}h")
+    print(f"  Snapshots: {total} | Records: ~{total*90}")
+    print("=" * 55)
+
+    total_rec = 0
+    for i in range(total):
+        print(f"\n[Snapshot {i+1}/{total}]")
+        total_rec += collect_snapshot(api_key, args.output_dir)
+        if i < total - 1:
+            print(f"  ⏳ Chờ {args.interval_min} phút...")
+            time.sleep(interval_s)
+
+    print(f"\n✅ Xong! Tổng: {total_rec} records")
 
 
 if __name__ == "__main__":
