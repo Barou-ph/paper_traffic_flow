@@ -1,9 +1,9 @@
 {
   "model": "AH-GNN",
   "metrics": {
-    "MAE": 208.4213,
-    "RMSE": 245.2072,
-    "MAPE": 88.3123
+    "MAE": 141.8563,
+    "RMSE": 189.0722,
+    "MAPE": 47.5205
   },
   "config": {
     "dataset_dir": "dataset",
@@ -20,7 +20,7 @@
     "patience": 15,
     "device": "cuda"
   },
-  "best_epoch": 34,
-  "y_mean": 585.1387939453125,
-  "y_std": 270.3654479980469
+  "best_epoch": 24,
+  "y_mean": 580.1990966796875,
+  "y_std": 272.2610778808594
 }

@@ -103,22 +103,22 @@
     "v10→v08",
     "v10→v09"
   ],
-  "T": 183,
+  "T": 845,
   "N": 10,
   "E": 90,
-  "F": 6,
+  "F": 9,
   "splits": {
     "train": [
       0,
-      128
+      591
     ],
     "val": [
-      128,
-      155
+      591,
+      718
     ],
     "test": [
-      155,
-      183
+      718,
+      845
     ]
   },
   "nodes": {
@@ -182,5 +182,16 @@
       "poi_type": "mixed",
       "name": "Pasteur-Lê Duẩn"
     }
-  }
+  },
+  "feature_names": [
+    "avg_congestion_out",
+    "avg_travel_time_out_norm",
+    "avg_delay_in_norm",
+    "avg_congestion_in",
+    "time_label_norm",
+    "poi_norm",
+    "hour_sin",
+    "hour_cos",
+    "is_rush"
+  ]
 }

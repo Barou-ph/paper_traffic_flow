@@ -33,7 +33,7 @@ os.makedirs("results", exist_ok=True)
 class LSTMBaseline(nn.Module):
     """Flatten tất cả node features → LSTM → predict ETA"""
 
-    def __init__(self, n_nodes, n_edges, in_dim=6, hidden_dim=64):
+    def __init__(self, n_nodes, n_edges, in_dim=9, hidden_dim=64):
         super().__init__()
         self.lstm = nn.LSTM(
             n_nodes * in_dim, hidden_dim, num_layers=2, batch_first=True, dropout=0.1
@@ -66,7 +66,7 @@ class StandardGCN(nn.Module):
 
 
 class GCNGRUBaseline(nn.Module):
-    def __init__(self, n_nodes, n_edges, in_dim=6, hidden_dim=32):
+    def __init__(self, n_nodes, n_edges, in_dim=9, hidden_dim=32):
         super().__init__()
         self.gcn1 = StandardGCN(in_dim, hidden_dim)
         self.gcn2 = StandardGCN(hidden_dim, hidden_dim)
@@ -119,7 +119,7 @@ class TemporalConv(nn.Module):
 
 
 class STGCNBaseline(nn.Module):
-    def __init__(self, n_nodes, n_edges, in_dim=6, hidden_dim=32):
+    def __init__(self, n_nodes, n_edges, in_dim=9, hidden_dim=32):
         super().__init__()
         self.input_proj = nn.Linear(in_dim, hidden_dim)
         self.gcn = StandardGCN(hidden_dim, hidden_dim)

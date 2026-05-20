@@ -1,24 +1,23 @@
 {
-  "total_rows": 16470,
-  "total_snapshots": 183,
+  "total_snapshots": 845,
   "n_nodes": 10,
   "n_edges": 90,
   "X_shape": [
-    183,
+    845,
     10,
-    6
+    9
   ],
   "Y_shape": [
-    183,
+    845,
     90
   ],
-  "Y_mean_travel_time_s": 585.1387939453125,
-  "Y_std_travel_time_s": 270.3654479980469,
-  "Y_min": 63.0,
-  "Y_max": 1470.0,
-  "train_snapshots": 128,
-  "val_snapshots": 27,
-  "test_snapshots": 28,
-  "KS_mean_divergence": 0.20994800329208374,
-  "granger_causal_links": 6
+  "Y_mean_s": 580.1990966796875,
+  "Y_std_s": 272.2610778808594,
+  "Y_min_s": 63.0,
+  "Y_max_s": 1534.0,
+  "train_snapshots": 591,
+  "val_snapshots": 127,
+  "test_snapshots": 127,
+  "KS_mean_divergence": 0.10525601357221603,
+  "granger_causal_links": 58
 }
