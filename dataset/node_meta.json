@@ -1,0 +1,222 @@
+{
+  "node_ids": [
+    "v01",
+    "v02",
+    "v03",
+    "v04",
+    "v05",
+    "v06",
+    "v07",
+    "v08",
+    "v09",
+    "v10"
+  ],
+  "edge_ids": [
+    "v01→v02",
+    "v01→v03",
+    "v01→v04",
+    "v01→v05",
+    "v01→v06",
+    "v01→v07",
+    "v01→v08",
+    "v01→v09",
+    "v01→v10",
+    "v02→v01",
+    "v02→v03",
+    "v02→v04",
+    "v02→v05",
+    "v02→v06",
+    "v02→v07",
+    "v02→v08",
+    "v02→v09",
+    "v02→v10",
+    "v03→v01",
+    "v03→v02",
+    "v03→v04",
+    "v03→v05",
+    "v03→v06",
+    "v03→v07",
+    "v03→v08",
+    "v03→v09",
+    "v03→v10",
+    "v04→v01",
+    "v04→v02",
+    "v04→v03",
+    "v04→v05",
+    "v04→v06",
+    "v04→v07",
+    "v04→v08",
+    "v04→v09",
+    "v04→v10",
+    "v05→v01",
+    "v05→v02",
+    "v05→v03",
+    "v05→v04",
+    "v05→v06",
+    "v05→v07",
+    "v05→v08",
+    "v05→v09",
+    "v05→v10",
+    "v06→v01",
+    "v06→v02",
+    "v06→v03",
+    "v06→v04",
+    "v06→v05",
+    "v06→v07",
+    "v06→v08",
+    "v06→v09",
+    "v06→v10",
+    "v07→v01",
+    "v07→v02",
+    "v07→v03",
+    "v07→v04",
+    "v07→v05",
+    "v07→v06",
+    "v07→v08",
+    "v07→v09",
+    "v07→v10",
+    "v08→v01",
+    "v08→v02",
+    "v08→v03",
+    "v08→v04",
+    "v08→v05",
+    "v08→v06",
+    "v08→v07",
+    "v08→v09",
+    "v08→v10",
+    "v09→v01",
+    "v09→v02",
+    "v09→v03",
+    "v09→v04",
+    "v09→v05",
+    "v09→v06",
+    "v09→v07",
+    "v09→v08",
+    "v09→v10",
+    "v10→v01",
+    "v10→v02",
+    "v10→v03",
+    "v10→v04",
+    "v10→v05",
+    "v10→v06",
+    "v10→v07",
+    "v10→v08",
+    "v10→v09"
+  ],
+  "T": 845,
+  "N": 10,
+  "E": 90,
+  "F": 9,
+  "splits": {
+    "train": [
+      0,
+      591
+    ],
+    "val": [
+      591,
+      718
+    ],
+    "test": [
+      718,
+      845
+    ]
+  },
+  "nodes": {
+    "v01": {
+      "lat": 10.7729,
+      "lon": 106.698,
+      "poi_type": "commercial",
+      "name": "Bến Thành"
+    },
+    "v02": {
+      "lat": 10.7875,
+      "lon": 106.6923,
+      "poi_type": "arterial",
+      "name": "Điện Biên Phủ-Hai BT"
+    },
+    "v03": {
+      "lat": 10.7802,
+      "lon": 106.6958,
+      "poi_type": "roundabout",
+      "name": "Vòng xoay Dân Chủ"
+    },
+    "v04": {
+      "lat": 10.7848,
+      "lon": 106.6889,
+      "poi_type": "residential",
+      "name": "Lê Văn Sỹ-N.Đ.Chiểu"
+    },
+    "v05": {
+      "lat": 10.7867,
+      "lon": 106.685,
+      "poi_type": "arterial",
+      "name": "CMT8-Điện Biên Phủ"
+    },
+    "v06": {
+      "lat": 10.796,
+      "lon": 106.7222,
+      "poi_type": "bridge",
+      "name": "Cầu Sài Gòn"
+    },
+    "v07": {
+      "lat": 10.774,
+      "lon": 106.703,
+      "poi_type": "commercial",
+      "name": "Nguyễn Huệ-Lê Lợi"
+    },
+    "v08": {
+      "lat": 10.7723,
+      "lon": 106.704,
+      "poi_type": "commercial",
+      "name": "Hàm Nghi-TĐT"
+    },
+    "v09": {
+      "lat": 10.7798,
+      "lon": 106.691,
+      "poi_type": "residential",
+      "name": "Võ Văn Tần-NKK"
+    },
+    "v10": {
+      "lat": 10.7822,
+      "lon": 106.6978,
+      "poi_type": "mixed",
+      "name": "Pasteur-Lê Duẩn"
+    }
+  },
+  "feature_names": [
+    "avg_congestion_out",
+    "avg_travel_time_out_norm",
+    "avg_delay_in_norm",
+    "avg_congestion_in",
+    "time_label_norm",
+    "poi_norm",
+    "hour_sin",
+    "hour_cos",
+    "is_rush"
+  ],
+  "splits_node": {
+    "train": [
+      0,
+      589
+    ],
+    "val": [
+      589,
+      715
+    ],
+    "test": [
+      715,
+      842
+    ]
+  },
+  "T_node": 842,
+  "T_out": 3,
+  "n_zone_types": 6,
+  "poi_types": [
+    "commercial",
+    "arterial",
+    "roundabout",
+    "residential",
+    "bridge",
+    "mixed"
+  ]
+}

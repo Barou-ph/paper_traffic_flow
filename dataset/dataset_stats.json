@@ -1,0 +1,23 @@
+{
+  "total_snapshots": 845,
+  "n_nodes": 10,
+  "n_edges": 90,
+  "X_shape": [
+    845,
+    10,
+    9
+  ],
+  "Y_shape": [
+    845,
+    90
+  ],
+  "Y_mean_s": 580.1990966796875,
+  "Y_std_s": 272.2610778808594,
+  "Y_min_s": 63.0,
+  "Y_max_s": 1534.0,
+  "train_snapshots": 591,
+  "val_snapshots": 127,
+  "test_snapshots": 127,
+  "KS_mean_divergence": 0.10525601357221603,
+  "granger_causal_links": 58
+}

@@ -1,0 +1,26 @@
+{
+  "LSTM": {
+    "MAE": 0.247,
+    "RMSE": 0.3205,
+    "MAPE": 22.4894,
+    "MAE_multi_zone": 0.247
+  },
+  "GCN-GRU": {
+    "MAE": 0.3622,
+    "RMSE": 0.5244,
+    "MAPE": 32.9393,
+    "MAE_multi_zone": 0.3622
+  },
+  "STGCN": {
+    "MAE": 0.2927,
+    "RMSE": 0.368,
+    "MAPE": 27.3163,
+    "MAE_multi_zone": 0.2927
+  },
+  "ZAH-GNN": {
+    "MAE": 0.1431,
+    "RMSE": 0.1837,
+    "MAPE": 13.1895,
+    "MAE_multi_zone": 0.1431
+  }
+}

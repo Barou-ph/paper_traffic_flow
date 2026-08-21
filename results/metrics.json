@@ -1,0 +1,28 @@
+{
+  "model": "ZAH-GNN",
+  "metrics": {
+    "MAE": 0.1431,
+    "RMSE": 0.1837,
+    "MAPE": 13.1895,
+    "MAE_multi_zone": 0.1431
+  },
+  "cfg": {
+    "dataset_dir": "dataset",
+    "ckpt_dir": "checkpoints",
+    "results_dir": "results",
+    "T_in": 12,
+    "F_feat": 9,
+    "T_out": 3,
+    "hidden_dim": 32,
+    "embed_dim": 16,
+    "n_layers": 2,
+    "batch_size": 16,
+    "lr": 0.001,
+    "epochs": 100,
+    "patience": 15,
+    "device": "cuda"
+  },
+  "best_epoch": 20,
+  "y_mean": 3.4499454498291016,
+  "y_std": 31.242708206176758
+}
